@@ -27,6 +27,27 @@ footer{
   color:#8cb7ff;
 }
 
+ul{
+
+  list-style-type: none;
+  text-decoration: none;
+  font-size:15px;
+}
+ul li{
+margin:10px;
+display: block;
+}
+ul li a{
+  color:white;
+  text-decoration: none;
+  padding:5px;
+
+}
+ul li a:hover{
+  background-color: #2e61b2;
+
+}
+
 .score  {
   grid-row: 1;
   grid-column: 2;
@@ -84,5 +105,9 @@ footer{
     height: 150px;
     width: 150px;
     margin: auto;
+  }
+
+  ul li{
+  display: inline;
   }
 }
