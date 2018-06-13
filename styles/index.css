@@ -3,6 +3,8 @@
   margin:0px;
 }
 
+
+
 html{
   font-family: monospace;
     background: #dbdcdd;
@@ -14,6 +16,7 @@ header{
   text-align:center;
   font-size:30px;
   padding:20px;
+
 
 }
 
@@ -83,9 +86,26 @@ ul li a:hover{
   margin: auto;
 }
 
+
+
 @media (min-width:600px)
 {
 
+  @keyframes pulse{
+      0%{
+          transform: rotate(0);
+          }
+      51%{
+          transform: rotate(0) scale(1.1);
+          }
+      100%{
+          transform: rotate(0) scale(1);
+          }
+  }
+
+  header{
+      animation: pulse 0.8s infinite 0s linear;
+  }
   .maincontent{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
